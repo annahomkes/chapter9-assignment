@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Music Survey - Anna Homkes</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  background-color: #EAEAEA;
+  width: 450px;
+  padding: 20px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.radio-label {
+  display: inline;
+  margin-left: 5px;
+}
+
+fieldset {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Music Survey</h1>
+
+<form>
+
+  <!-- Name -->
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name">
+
+  <!-- Email -->
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email">
+
+  <!-- Textarea -->
+  <label for="comments">Favorite Music / Comments:</label>
+  <textarea name="comments" id="comments" rows="3" cols="60"></textarea>
+
+  <!-- Radio buttons -->
+  <fieldset>
+    <legend>Favorite Music Type</legend>
+
+    <input type="radio" name="music" id="pop" value="Pop">
+    <label for="pop" class="radio-label">Pop</label><br>
+
+    <input type="radio" name="music" id="rock" value="Rock">
+    <label for="rock" class="radio-label">Rock</label><br>
+
+    <input type="radio" name="music" id="country" value="Country">
+    <label for="country" class="radio-label">Country</label>
+  </fieldset>
+
+  <!-- Select box -->
+  <label for="platform">Where do you listen?</label>
+  <select name="platform" id="platform" size="3">
+    <option>Spotify</option>
+    <option>Apple Music</option>
+    <option>YouTube</option>
+    <option>SoundCloud</option>
+  </select>
+
+  <!-- Date -->
+  <label for="date">Date you listen:</label>
+  <input type="date" name="date" id="date">
+
+  <!-- Buttons -->
+  <div class="buttons">
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </div>
+
+</form>
+
+<!-- REQUIRED bottom info -->
+<p style="text-align:center; margin-top:20px;">
+  Anna Homkes <br>
+  annahomkes@email.com
+</p>
+
+<p style="text-align:center;">
+  <a href="https://annahomkes.github.io/">Back to Home</a>
+</p>
+
+</body>
+</html>
