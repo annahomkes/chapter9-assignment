@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <title>New Form - Anna Homkes</title>
@@ -8,6 +7,10 @@
 <style>
 body {
   font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
 }
 
 form {
@@ -20,6 +23,19 @@ form {
 label {
   display: block;
   margin-top: 10px;
+}
+
+fieldset {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* FIXED IMAGE SIZE */
+input[type="image"] {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
 }
 </style>
 
@@ -38,13 +54,26 @@ label {
   <!-- b. Radio buttons -->
   <p>Favorite Day of the Week:</p>
 
-  <input type="radio" name="favday" value="Monday"> Monday<br>
-  <input type="radio" name="favday" value="Tuesday"> Tuesday<br>
-  <input type="radio" name="favday" value="Wednesday"> Wednesday<br>
-  <input type="radio" name="favday" value="Thursday"> Thursday<br>
-  <input type="radio" name="favday" value="Friday"> Friday<br>
-  <input type="radio" name="favday" value="Saturday"> Saturday<br>
-  <input type="radio" name="favday" value="Sunday"> Sunday<br>
+  <input type="radio" name="favday" id="monday" value="Monday">
+  <label for="monday">Monday</label>
+
+  <input type="radio" name="favday" id="tuesday" value="Tuesday">
+  <label for="tuesday">Tuesday</label>
+
+  <input type="radio" name="favday" id="wednesday" value="Wednesday">
+  <label for="wednesday">Wednesday</label>
+
+  <input type="radio" name="favday" id="thursday" value="Thursday">
+  <label for="thursday">Thursday</label>
+
+  <input type="radio" name="favday" id="friday" value="Friday">
+  <label for="friday">Friday</label>
+
+  <input type="radio" name="favday" id="saturday" value="Saturday">
+  <label for="saturday">Saturday</label>
+
+  <input type="radio" name="favday" id="sunday" value="Sunday">
+  <label for="sunday">Sunday</label>
 
   <!-- c. Select list -->
   <label for="social">Favorite Social Networking Site:</label>
@@ -81,8 +110,6 @@ label {
   <!-- g. Password -->
   <label for="pword">Password:</label>
   <input type="password" name="pword" id="pword">
-
-  <br><br>
 
   <!-- e. Image button -->
   <input type="image" src="signup.gif" alt="Sign Up">
