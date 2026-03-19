@@ -30,7 +30,6 @@ fieldset {
   margin-bottom: 15px;
 }
 
-/* FIXED IMAGE SIZE */
 input[type="image"] {
   width: 150px;
   height: auto;
@@ -38,44 +37,39 @@ input[type="image"] {
   margin: 20px auto;
 }
 </style>
-
 </head>
-
 <body>
 
 <h1>Chapter 9 Assignment</h1>
 
 <form method="post" action="https://webdevbasics.net/scripts/demo.php">
 
-  <!-- a. Username (max 30 characters) -->
   <label for="username">Username:</label>
   <input type="text" name="username" id="username" maxlength="30">
 
-  <!-- b. Radio buttons -->
   <p>Favorite Day of the Week:</p>
 
   <input type="radio" name="favday" id="monday" value="Monday">
-  <label for="monday">Monday</label>
+  <label for="monday">Monday</label><br>
 
   <input type="radio" name="favday" id="tuesday" value="Tuesday">
-  <label for="tuesday">Tuesday</label>
+  <label for="tuesday">Tuesday</label><br>
 
   <input type="radio" name="favday" id="wednesday" value="Wednesday">
-  <label for="wednesday">Wednesday</label>
+  <label for="wednesday">Wednesday</label><br>
 
   <input type="radio" name="favday" id="thursday" value="Thursday">
-  <label for="thursday">Thursday</label>
+  <label for="thursday">Thursday</label><br>
 
   <input type="radio" name="favday" id="friday" value="Friday">
-  <label for="friday">Friday</label>
+  <label for="friday">Friday</label><br>
 
   <input type="radio" name="favday" id="saturday" value="Saturday">
-  <label for="saturday">Saturday</label>
+  <label for="saturday">Saturday</label><br>
 
   <input type="radio" name="favday" id="sunday" value="Sunday">
-  <label for="sunday">Sunday</label>
+  <label for="sunday">Sunday</label><br>
 
-  <!-- c. Select list -->
   <label for="social">Favorite Social Networking Site:</label>
   <select name="social" id="social">
     <option value="Instagram">Instagram</option>
@@ -84,7 +78,6 @@ input[type="image"] {
     <option value="Facebook">Facebook</option>
   </select>
 
-  <!-- d. Fieldset -->
   <fieldset>
     <legend>Shipping Address</legend>
 
@@ -104,20 +97,17 @@ input[type="image"] {
     <input type="text" name="zip" id="zip">
   </fieldset>
 
-  <!-- f. Hidden input -->
   <input type="hidden" name="userid" value="AH123">
 
-  <!-- g. Password -->
   <label for="pword">Password:</label>
   <input type="password" name="pword" id="pword">
 
-  <!-- e. Image button -->
   <input type="image" src="signup.gif" alt="Sign Up">
 
 </form>
 
 <p style="text-align:center;">
-<a href="https://annahomkes.github.io/">Back to Home</a>
+  <a href="https://annahomkes.github.io/">Back to Home</a>
 </p>
 
 </body>
