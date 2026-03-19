@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Chapter 9 Assignment - Anna Homkes</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+
+form {
+  background-color: #EAEAEA;
+  width: 400px;
+  padding: 20px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Chapter 9 Assignment</h1>
+
+<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+
+<label for="username">Username:</label>
+<input type="text" name="username" id="username" maxlength="30">
+
+<p>Favorite Day of the Week:</p>
+
+<input type="radio" name="day" value="Monday"> Monday<br>
+<input type="radio" name="day" value="Tuesday"> Tuesday<br>
+<input type="radio" name="day" value="Wednesday"> Wednesday<br>
+<input type="radio" name="day" value="Thursday"> Thursday<br>
+<input type="radio" name="day" value="Friday"> Friday<br>
+<input type="radio" name="day" value="Saturday"> Saturday<br>
+<input type="radio" name="day" value="Sunday"> Sunday<br>
+
+<label for="social">Favorite Social Network:</label>
+<select name="social" id="social">
+  <option value="instagram">Instagram</option>
+  <option value="tiktok">TikTok</option>
+  <option value="snapchat">Snapchat</option>
+  <option value="twitter">Twitter/X</option>
+</select>
+
+<fieldset>
+<legend>Shipping Address</legend>
+
+<label for="address1">Address Line 1:</label>
+<input type="text" name="address1" id="address1">
+
+<label for="address2">Address Line 2:</label>
+<input type="text" name="address2" id="address2">
+
+<label for="city">City:</label>
+<input type="text" name="city" id="city">
+
+<label for="state">State:</label>
+<input type="text" name="state" id="state">
+
+<label for="zip">Zip:</label>
+<input type="text" name="zip" id="zip">
+
+</fieldset>
+
+<p>
+<input type="image" src="signup.gif" alt="Sign Up">
+</p>
+
+<input type="hidden" name="userid" value="12345">
+
+<label for="pword">Password:</label>
+<input type="password" name="pword" id="pword">
+
+</form>
+
+<p style="text-align:center;">
+<a href="https://annahomkes.github.io/">Back to Home</a>
+</p>
+
+</body>
+
+</html>
