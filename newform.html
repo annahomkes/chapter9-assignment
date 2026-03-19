@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Chapter 9 Assignment - Anna Homkes</title>
+<title>New Form - Anna Homkes</title>
 
 <style>
 body {
@@ -21,7 +21,6 @@ label {
   display: block;
   margin-top: 10px;
 }
-
 </style>
 
 </head>
@@ -32,55 +31,61 @@ label {
 
 <form method="post" action="https://webdevbasics.net/scripts/demo.php">
 
-<label for="username">Username:</label>
-<input type="text" name="username" id="username" maxlength="30">
+  <!-- a. Username (max 30 characters) -->
+  <label for="username">Username:</label>
+  <input type="text" name="username" id="username" maxlength="30">
 
-<p>Favorite Day of the Week:</p>
+  <!-- b. Radio buttons -->
+  <p>Favorite Day of the Week:</p>
 
-<input type="radio" name="day" value="Monday"> Monday<br>
-<input type="radio" name="day" value="Tuesday"> Tuesday<br>
-<input type="radio" name="day" value="Wednesday"> Wednesday<br>
-<input type="radio" name="day" value="Thursday"> Thursday<br>
-<input type="radio" name="day" value="Friday"> Friday<br>
-<input type="radio" name="day" value="Saturday"> Saturday<br>
-<input type="radio" name="day" value="Sunday"> Sunday<br>
+  <input type="radio" name="favday" value="Monday"> Monday<br>
+  <input type="radio" name="favday" value="Tuesday"> Tuesday<br>
+  <input type="radio" name="favday" value="Wednesday"> Wednesday<br>
+  <input type="radio" name="favday" value="Thursday"> Thursday<br>
+  <input type="radio" name="favday" value="Friday"> Friday<br>
+  <input type="radio" name="favday" value="Saturday"> Saturday<br>
+  <input type="radio" name="favday" value="Sunday"> Sunday<br>
 
-<label for="social">Favorite Social Network:</label>
-<select name="social" id="social">
-  <option value="instagram">Instagram</option>
-  <option value="tiktok">TikTok</option>
-  <option value="snapchat">Snapchat</option>
-  <option value="twitter">Twitter/X</option>
-</select>
+  <!-- c. Select list -->
+  <label for="social">Favorite Social Networking Site:</label>
+  <select name="social" id="social">
+    <option value="Instagram">Instagram</option>
+    <option value="TikTok">TikTok</option>
+    <option value="Snapchat">Snapchat</option>
+    <option value="Facebook">Facebook</option>
+  </select>
 
-<fieldset>
-<legend>Shipping Address</legend>
+  <!-- d. Fieldset -->
+  <fieldset>
+    <legend>Shipping Address</legend>
 
-<label for="address1">Address Line 1:</label>
-<input type="text" name="address1" id="address1">
+    <label for="address1">Addressline1:</label>
+    <input type="text" name="address1" id="address1">
 
-<label for="address2">Address Line 2:</label>
-<input type="text" name="address2" id="address2">
+    <label for="address2">Addressline2:</label>
+    <input type="text" name="address2" id="address2">
 
-<label for="city">City:</label>
-<input type="text" name="city" id="city">
+    <label for="city">City:</label>
+    <input type="text" name="city" id="city">
 
-<label for="state">State:</label>
-<input type="text" name="state" id="state">
+    <label for="state">State:</label>
+    <input type="text" name="state" id="state">
 
-<label for="zip">Zip:</label>
-<input type="text" name="zip" id="zip">
+    <label for="zip">Zip:</label>
+    <input type="text" name="zip" id="zip">
+  </fieldset>
 
-</fieldset>
+  <!-- f. Hidden input -->
+  <input type="hidden" name="userid" value="AH123">
 
-<p>
-<input type="image" src="signup.gif" alt="Sign Up">
-</p>
+  <!-- g. Password -->
+  <label for="pword">Password:</label>
+  <input type="password" name="pword" id="pword">
 
-<input type="hidden" name="userid" value="12345">
+  <br><br>
 
-<label for="pword">Password:</label>
-<input type="password" name="pword" id="pword">
+  <!-- e. Image button -->
+  <input type="image" src="signup.gif" alt="Sign Up">
 
 </form>
 
@@ -89,5 +94,4 @@ label {
 </p>
 
 </body>
-
 </html>
